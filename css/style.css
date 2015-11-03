@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 .right-off-canvas-toggle .menu {
   float: right;
   display: block;
@@ -8,6 +12,7 @@
 .hero {
   background: url("../img/sunglasses-apple-iphone-desk.jpg") no-repeat center center fixed;
   background-size: cover;
+  background-color: black;
   height: 100vh; }
   .hero img.logo {
     width: 15rem;
@@ -80,7 +85,7 @@
       .right-off-canvas-menu .social i:hover {
         background: #00d7ff;
         color: #333;
-        transition: all 200ms ease-in .1s; }
+        transition: all 150ms ease-in .1s; }
 
 .top-bar,
 .middle-bar,

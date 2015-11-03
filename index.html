@@ -6,6 +6,7 @@
     <title>Micah Ryan | Design</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -45,10 +46,10 @@
           <li><i class="fi-social-twitter"></i></li>
         </ul>
     </aside>
-      <section class="hero">
+      <section class="hero wow fadeIn">
         <img class="logo" src="http://micahryan.com/wp-content/uploads/2015/04/MR-Logo-Design-Long.png" alt="logo" />
         <div class="hero-overlay">
-          <h1 class="hero-text">Quality user experience through responsive web design and front-end development</h1>
+          <h1 class="hero-text wow fadeInUp">Quality user experience through responsive web design and front-end development</h1>
         </div>
       </section>
     <!-- main content goes here -->
@@ -62,6 +63,8 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
 
+
+ <!-- Menu Toggle -->
     <script>
       $(document).foundation();
 
@@ -73,6 +76,12 @@ $(function() {
     });
 });
     </script>
+
+ <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     
   </body>
 </html>
