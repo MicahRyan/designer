@@ -77,7 +77,7 @@ body {
     .right-off-canvas-menu .social i {
       font-size: 1.7rem;
       font-weight: 300;
-      color: #898989;
+      color: #ffffff;
       padding: .01em .4em;
       border-radius: 50%;
       background: #333;
@@ -117,3 +117,22 @@ body {
 .bottom-bar-close {
   transform: rotate(45deg);
   background-color: #333; }
+
+  .large-6 p {
+    color: #898989;
+  }
+
+  .inline-list a {
+    color: #898989;
+    transition: all .3s ease-in;
+  }
+
+  .inline-list a:hover {
+    color: #040303;
+  }
+
+  .large-12 img {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
