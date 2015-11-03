@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micah Ryan | Design</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    
+    
+
+
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+  <nav class="header"></nav>
+    <a class="right-off-canvas-toggle" href="#">
+      <div class="menu">
+        <div class="top-bar"></div>
+        <div class="middle-bar"></div>
+        <div class="bottom-bar"></div>
+      </div>
+    </a>
+  </nav>
+    <!-- Off Canvas Menu -->
+    <aside class="right-off-canvas-menu">
+        <!-- whatever you want goes here -->
+        <ul class="side-nav main">
+          <li><a class="is-active" href="#">faster</a></li>
+          <li><a href="#">smarter</a></li>
+          <li><a href="#">easier</a></li>
+        </ul>
+        <ul class="side-nav secondary">
+          <li><a href="#">about</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+        <ul class="inline-list social">
+          <li><i class="fi-social-facebook"></i></li>
+          <li><i class="fi-social-youtube"></i></li>
+          <li><i class="fi-social-twitter"></i></li>
+        </ul>
+    </aside>
+      <section class="hero">
+        <img class="logo" src="http://micahryan.com/wp-content/uploads/2015/04/MR-Logo-Design-Long.png" alt="logo" />
+        <div class="hero-overlay">
+          <h1 class="hero-text">Quality user experience through responsive web design and front-end development</h1>
+        </div>
+      </section>
+    <!-- main content goes here -->
+    
+  <!-- close the off-canvas menu -->
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+
+    <script>
+      $(document).foundation();
+
+$(function() {
+  $(".right-off-canvas-toggle, .exit-off-canvas").click(function() {
+      $(".top-bar").toggleClass("top-bar-close");
+    $(".middle-bar").toggleClass("middle-bar-close");
+    $(".bottom-bar").toggleClass("bottom-bar-close");
+    });
+});
+    </script>
+    
+  </body>
+</html>
