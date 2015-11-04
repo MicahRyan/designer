@@ -231,6 +231,24 @@ body {
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
+#hero-button {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+}
+
+#lead-img {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 1s;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
 
 
 
