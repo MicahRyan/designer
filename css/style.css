@@ -39,7 +39,7 @@ body {
 }
 
 .hero-text a {
-  text-align: center;
+  margin: 1em 5rem 0;
 }
 
 .move-left .exit-off-canvas {
@@ -208,8 +208,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   padding-right: 2.2em;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
 }
 .hvr-icon-bounce:before {
   content: "\f087";
