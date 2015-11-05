@@ -343,6 +343,15 @@ body {
   animation-delay: 1s;
 }
 
+#body {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+}
+
 
 
 
