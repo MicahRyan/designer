@@ -1,0 +1,1 @@
+$('#lead-img').addClass('animated fadeInUp');
