@@ -415,6 +415,34 @@ body {
   height: 2164px;
 }
 
+.aggie {
+  background-image: url(../img/logowhitemaroon.jpg);
+}
+
+.vet-tech {
+  background-image: url(../img/vet-tech.jpg);
+}
+
+.vismo {
+  background-image: url(../img/vismo.jpg);
+}
+
+.uta {
+  background-image: url(../img/uta.jpg);
+}
+
+.bda {
+  background-image: url(../img/bda.jpg);
+}
+
+.nationalcar {
+  background-image: url(../img/nationalcar.jpg);
+}
+
+.maritz {
+  background-image: url(../img/maritz.jpg);
+}
+
 
 #hero-button {
   -webkit-animation-duration: 1s;
