@@ -100,19 +100,15 @@ body {
   border-bottom: #F2F2F2 solid 2px;
   height: 130px;
 }
-
 .row .large-12 img {
   margin-top: 3.5rem;
 }
-
 .row .large-12 h1 {
   margin-top: 3.5rem;
 }
-
 .row .large-12 h2 {
   margin-top: 3.5rem;
 }
-
 .top-bar, .middle-bar, .bottom-bar {
   display: block;
   width: 40px;
@@ -423,6 +419,7 @@ ul li {
 /*------------------------------------
  timeline styles
 ------------------------------------*/
+
 .path-container {
   margin-top: 50px;
   margin-bottom: 70px;
@@ -470,7 +467,6 @@ ul li {
   z-index: 0;
   height: 2164px;
 }
-
 .aggie {
   background-image: url(../img/logowhitemaroon.jpg);
 }
@@ -604,7 +600,7 @@ p i {
     padding: 2.5rem 2.5rem;
   }
   .hero-text {
-    margin: 7.5rem 5rem 0;
+    margin: 9rem auto 0rem auto;
   }
 }
 @media screen and (max-width:641px) {
