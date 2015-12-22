@@ -217,7 +217,7 @@ ul li {
   padding: 10px 60px 10px 30px;
   border-radius: 20px;
 }
-.hvr-bob li a {
+li a {
   max-width: 100%;
 }
 
