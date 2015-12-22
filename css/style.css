@@ -217,8 +217,8 @@ ul li {
   padding: 10px 60px 10px 30px;
   border-radius: 20px;
 }
-li a {
-  max-width: 100%;
+.hvr-bob li a img {
+  width: 100%;
 }
 
 /* Icon Bounce */
