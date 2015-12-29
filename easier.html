@@ -5,10 +5,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Micah Ryan | Design</title>
-  <link rel="stylesheet" href="css/foundation.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/animate.css" />
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/foundation.min.css" />
+  <script src="js/loadCSS.min.js"></script>
+  <script>
+    // load a file
+    loadCSS("css/style.min.css");
+    loadCSS("css/animate.min.css");
+    loadCSS("http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css");
+  </script>
 </head>
 
 <body class="wow fadeIn" id="body">
@@ -39,13 +43,8 @@
         <ul class="side-nav secondary">
           <li><a href="about.html">about</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="#">blog</a></li>
+          <li><a href="instagram.html">Instagram</a></li>
           <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <ul class="inline-list social">
-          <li><i class="fi-social-facebook"></i></li>
-          <li><i class="fi-social-youtube"></i></li>
-          <li><i class="fi-social-twitter"></i></li>
         </ul>
       </aside>
       <section class="page-background">
@@ -54,7 +53,7 @@
         </a>
         <div class="row">
           <div class="large-12 columns wow fadeInDown" id="load">
-            <img src="img/placeit-7.png">
+            <img src="img/placeit-7-opt.jpg">
 
             <hr>
           </div>
@@ -66,7 +65,7 @@
             <ul class="clearing-thumbs hvr-bob" data-clearing>
               <li>
                 <a href="img/placeit-6.png">
-                  <img class="clearing-thumbs" src="img/placeit-6.png">
+                  <img class="clearing-thumbs" src="img/placeit-6-opt.jpg">
                 </a>
                 <p><i>Navigating through the app would include 3D transitions that would indicate to the user that they were using a different scenario of the same location.</i></p>
               </li>
@@ -113,7 +112,7 @@
             <ul class="clearing-thumbs hvr-bob" data-clearing>
               <li>
                 <a href="img/placeit-8.png">
-                  <img class="clearing-thumbs" src="img/placeit-8.png">
+                  <img class="clearing-thumbs" src="img/placeit-8-opt.jpg">
                 </a>
                 <p><i>I used intuitive icons and interactions, rather than popup text, to insure that the user understand what they did and could do in the app.</i></p>
               </li>
@@ -135,7 +134,7 @@
                   <li><a href="easier.html">Easier</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="instagram.html">Instagram</a></li>
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
               </div>
@@ -150,11 +149,11 @@
 
     </div>
   </div>
-  <script src="js/vendor/modernizr.js"></script>
-  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/modernizr.min.js"></script>
+  <script src="js/vendor/jquery.min.js"></script>
   <script src="js/foundation.min.js"></script>
-  <script src="js/foundation/foundation.offcanvas.js"></script>
-  <script src="js/menu.js"></script>
+  <script src="js/foundation/foundation.offcanvas.min.js"></script>
+  <script src="js/menu.min.js"></script>
 
   <!-- Wow JS -->
   <script src="js/wow.min.js"></script>
