@@ -69,37 +69,43 @@
                 <h5 class="title">About You</h5>
                 <hr class="subtle-hr">
                 <div class="content" data-slug="panel1">
-                  <form>
+                  <form id="myForm" data-abide>
                     <div class="row collapse">
                       <div class="large-2 columns">
-                        <label class="inline">Your Name</label>
+                        <label class="inline">Your Name
+                          <small>required</small>
+                        </label>
                       </div>
                     </div>
 
                     <div class="row collapse">
                       <div class="large-12 columns">
-                        <input type="text" id="yourName" placeholder="eg. Micah Ryan">
+                        <input type="text" id="yourName" placeholder="eg. Micah Ryan" required>
+                        <small class="error">Your name is required</small>
                       </div>
                     </div>
 
                     <div class="row collapse">
-                      <div class="large-2 columns">
-                        <label class="inline">Email Address</label>
+                      <div class="large-12 columns">
+                        <label class="inline">Email Address
+                          <small>required</small>
+                        </label>
                       </div>
                       <div class="large-12 columns">
-                        <input type="text" id="yourEmail" placeholder="contact@micahryan.com">
+                        <input type="email" id="yourEmail" placeholder="contact@micahryan.com" required>
+                        <small class="error">Email is required</small>
                       </div>
                     </div>
 
                     <div class="row collapse">
                       <div class="large-6 columns">
                         <label class="inline">Telephone number or Skype username</label>
-                        <input type="text" id="yourEmail" placeholder="eg. (123) 456-7890 ">
+                        <input type="text" id="yourNumber" placeholder="eg. (123) 456-7890 ">
                       </div>
 
                       <div class="large-6 columns">
                         <label class="inline">Your website</label>
-                        <input type="text" id="yourEmail" placeholder="eg. micahryan.com">
+                        <input type="text" id="yourWebsite" placeholder="eg. micahryan.com">
                       </div>
                     </div>
 
@@ -110,126 +116,172 @@
                         <p class="form-space">When enquiring about hiring me, please specify a budget and ideal start date. This helps me determine the best solution for your circumstances.</p>
                       </div>
                     </div>
-                </div>
 
-                <div class="row collapse">
-                  <div class="large-6 columns">
-                    <label class="inline">Budget</label>
-                    <input type="text" id="yourEmail" placeholder="eg. $1500 ">
-                  </div>
+                    <div class="row collapse">
+                      <div class="large-6 columns">
+                        <label class="inline">Budget
+                          <small>required</small>
+                        </label>
+                        <input type="text" id="yourBudget" placeholder="eg. $1500" required>
+                        <small class="error">Your budget is required</small>
+                      </div>
 
-                  <div class="large-6 columns">
-                    <label class="inline">Start date</label>
-                    <select id="customDropdown">
-                      <option>Please select</option>
-                      <option>within 1 month</option>
-                      <option>1 - 2 months</option>
-                      <option>2 - 3 months</option>
-                      <option>3+ months</option>
-                    </select>
-                  </div>
-                </div>
+                      <div class="large-6 columns">
+                        <label class="inline">Start date</label>
+                        <select id="startDate">
+                          <option>Please select</option>
+                          <option>within 1 month</option>
+                          <option>1 - 2 months</option>
+                          <option>2 - 3 months</option>
+                          <option>3+ months</option>
+                        </select>
+                      </div>
+                    </div>
 
-                <div class="row collapse">
-                  <h5 class="title">Message/Project Description</h5>
-                  <hr class="subtle-hr">
-                  <div class="large-12 column">
-                    <p class="form-space">When enquiring about hiring me, please describe your project, what you'd like me to do, and link to any appropriate materials (such as PSDs available via Dropbox).</p>
-                  </div>
+                    <div class="row collapse">
+                      <h5 class="title">Message/Project Description</h5>
+                      <hr class="subtle-hr">
+                      <div class="large-12 column">
+                        <p class="form-space">When enquiring about hiring me, please describe your project, what you'd like me to do, and link to any appropriate materials (such as PSDs available via Dropbox).</p>
+                      </div>
 
-                  <label> </label>
-                  <textarea rows="4"></textarea>
-                  <button type="submit" class="radius button">Submit</button>
+                      <label>
+                        <small>required</small>
+                      </label>
+                      <textarea id="yourMessage" rows="4" required></textarea>
+                      <small class="error">Your message/project description is required</small>
+                      <button type="submit" class="radius button">Submit</button>
                   </form>
-                </div>
+                  </div>
               </section>
-            </div>
-          </div>
-
-
-
-
-
-
-
-          <div class="large-3 columns wow fadeInRight" id="lead-img">
-
-            <p>
-              <img class="headshot" src="img/headshot.jpg">
-            </p>
-            <p>
-              I would love to hear from you!
-            </p>
-          </div>
-
-        </div>
-
-        <!-- Footer -->
-        <footer class="row">
-          <div class="large-12 columns">
-            <hr/>
-            <div class="row">
-              <div class="large-6 columns">
-                <p>© Copyright Micah Ryan.</p>
-              </div>
-              <div class="large-6 columns">
-                <ul class="inline-list right">
-                  <li><a href="faster.html">Faster</a></li>
-                  <li><a href="smarter.html">Smarter</a></li>
-                  <li><a href="easier.html">Easier</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="instagram.html">Instagram</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
               </div>
             </div>
+
+
+
+
+
+
+
+            <div class="large-3 columns wow fadeInRight" id="lead-img">
+
+              <p>
+                <img class="headshot" src="img/headshot.jpg">
+              </p>
+              <p>
+                I would love to hear from you!
+              </p>
+            </div>
+
           </div>
-        </footer>
+
+          <!-- Footer -->
+          <footer class="row">
+            <div class="large-12 columns">
+              <hr/>
+              <div class="row">
+                <div class="large-6 columns">
+                  <p>© Copyright Micah Ryan.</p>
+                </div>
+                <div class="large-6 columns">
+                  <ul class="inline-list right">
+                    <li><a href="faster.html">Faster</a></li>
+                    <li><a href="smarter.html">Smarter</a></li>
+                    <li><a href="easier.html">Easier</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="instagram.html">Instagram</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
       </section>
       <!-- main content goes here -->
 
       <!-- close the off-canvas menu -->
       <a class="exit-off-canvas"></a>
 
+      </div>
     </div>
-  </div>
-  <script src="js/vendor/modernizr.min.js"></script>
-  <script src="js/vendor/jquery.min.js"></script>
-  <script src="js/foundation.min.js"></script>
-  <script src="js/foundation/foundation.offcanvas.min.js"></script>
-  <script src="js/menu.min.js"></script>
+    <script src="js/vendor/modernizr.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.offcanvas.min.js"></script>
+    <script src="js/foundation/foundation.abide.min.js"></script>
+    <script src="js/menu.min.js"></script>
 
-  <!-- Wow JS -->
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
+    <!-- Form Validation -->
+    <script>
+      $('#myForm')
+        .on('valid.fndtn.abide', function() {
+          console.log('valid!');
+        });
 
-  <!-- Scroll to Top -->
-  <script>
-    if ($('#top').length) {
-      var scrollTrigger = 100, // px
-        backToTop = function() {
-          var scrollTop = $(window).scrollTop();
-          if (scrollTop > scrollTrigger) {
-            $('#top').addClass('show');
-          } else {
-            $('#top').removeClass('show');
-          }
-        };
-      backToTop();
-      $(window).on('scroll', function() {
+      var yourName = $("input#yourName").val();
+      var yourEmail = $("input#yourEmail").val();
+      var yourNumber = $("input#yourNumber").val();
+      var yourWebsite = $("input#yourWebsite").val();
+      var yourBudget = $("input#yourBudget").val();
+      var startDate = $("select#startDate").val();
+      var yourMessage = $("textarea#yourMessage").val();
+
+      //Data for response
+      var dataString = 'yourName=' + yourName +
+        '&yourEmail=' + yourEmail +
+        '&yourNumber=' + yourNumber +
+        '&yourWebsite=' + yourWebsite +
+        '&yourBudget=' + yourBudget +
+        'startDate=' + startDate +
+        '&yourMessage=' + yourMessage;
+
+      //Begin Ajax call
+      $.ajax({
+        type: "POST",
+        url: "php/mail.php"
+        data: dataString,
+        success: function() {
+          $('.contactform').html("<div id='thanks'></div>");
+          $('#thanks').html("<h2>Thanks!</h2>")
+            .append("<p>Dear " + yourName + "! I will contact you soon.</p>")
+            .hide()
+            .fadeIn(1500);
+        },
+      }); //ajax call
+      return false;
+    </script>
+
+    <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- Scroll to Top -->
+    <script>
+      if ($('#top').length) {
+        var scrollTrigger = 100, // px
+          backToTop = function() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+              $('#top').addClass('show');
+            } else {
+              $('#top').removeClass('show');
+            }
+          };
         backToTop();
-      });
-      $('#top').on('click', function(e) {
-        e.preventDefault();
-        $('html,body').animate({
-          scrollTop: 0
-        }, 700);
-      });
-    }
-  </script>
+        $(window).on('scroll', function() {
+          backToTop();
+        });
+        $('#top').on('click', function(e) {
+          e.preventDefault();
+          $('html,body').animate({
+            scrollTop: 0
+          }, 700);
+        });
+      }
+    </script>
 
 </body>
 
