@@ -70,87 +70,89 @@
                 <hr class="subtle-hr">
                 <div class="content" data-slug="panel1">
                   <form id="myForm" data-abide>
-                    <div class="row collapse">
-                      <div class="large-2 columns">
-                        <label class="inline">Your Name
+                    <div class="contactform">
+                      <div class="row collapse">
+                        <div class="large-2 columns">
+                          <label class="inline">Your Name
+                            <small>required</small>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="row collapse">
+                        <div class="large-12 columns">
+                          <input type="text" id="yourName" placeholder="eg. Micah Ryan" required>
+                          <small class="error">Your name is required</small>
+                        </div>
+                      </div>
+
+                      <div class="row collapse">
+                        <div class="large-12 columns">
+                          <label class="inline">Email Address
+                            <small>required</small>
+                          </label>
+                        </div>
+                        <div class="large-12 columns">
+                          <input type="email" id="yourEmail" placeholder="contact@micahryan.com" required>
+                          <small class="error">Email is required</small>
+                        </div>
+                      </div>
+
+                      <div class="row collapse">
+                        <div class="large-6 columns">
+                          <label class="inline">Telephone number or Skype username</label>
+                          <input type="text" id="yourNumber" placeholder="eg. (123) 456-7890 ">
+                        </div>
+
+                        <div class="large-6 columns">
+                          <label class="inline">Your website</label>
+                          <input type="text" id="yourWebsite" placeholder="eg. micahryan.com">
+                        </div>
+                      </div>
+
+                      <div class="row collapse">
+                        <h5 class="title">Project Details</h5>
+                        <hr class="subtle-hr">
+                        <div class="large-12 column">
+                          <p class="form-space">When enquiring about hiring me, please specify a budget and ideal start date. This helps me determine the best solution for your circumstances.</p>
+                        </div>
+                      </div>
+
+                      <div class="row collapse">
+                        <div class="large-6 columns">
+                          <label class="inline">Budget
+                            <small>required</small>
+                          </label>
+                          <input type="text" id="yourBudget" placeholder="eg. $1500" required>
+                          <small class="error">Your budget is required</small>
+                        </div>
+
+                        <div class="large-6 columns">
+                          <label class="inline">Start date</label>
+                          <select id="startDate">
+                            <option>Please select</option>
+                            <option>within 1 month</option>
+                            <option>1 - 2 months</option>
+                            <option>2 - 3 months</option>
+                            <option>3+ months</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row collapse">
+                        <h5 class="title">Message/Project Description</h5>
+                        <hr class="subtle-hr">
+                        <div class="large-12 column">
+                          <p class="form-space">When enquiring about hiring me, please describe your project, what you'd like me to do, and link to any appropriate materials (such as PSDs available via Dropbox).</p>
+                        </div>
+
+                        <label>
                           <small>required</small>
                         </label>
+                        <textarea id="yourMessage" rows="4" required></textarea>
+                        <small class="error">Your message/project description is required</small>
+                        <button type="submit" class="radius button">Submit</button>
                       </div>
-                    </div>
-
-                    <div class="row collapse">
-                      <div class="large-12 columns">
-                        <input type="text" id="yourName" placeholder="eg. Micah Ryan" required>
-                        <small class="error">Your name is required</small>
-                      </div>
-                    </div>
-
-                    <div class="row collapse">
-                      <div class="large-12 columns">
-                        <label class="inline">Email Address
-                          <small>required</small>
-                        </label>
-                      </div>
-                      <div class="large-12 columns">
-                        <input type="email" id="yourEmail" placeholder="contact@micahryan.com" required>
-                        <small class="error">Email is required</small>
-                      </div>
-                    </div>
-
-                    <div class="row collapse">
-                      <div class="large-6 columns">
-                        <label class="inline">Telephone number or Skype username</label>
-                        <input type="text" id="yourNumber" placeholder="eg. (123) 456-7890 ">
-                      </div>
-
-                      <div class="large-6 columns">
-                        <label class="inline">Your website</label>
-                        <input type="text" id="yourWebsite" placeholder="eg. micahryan.com">
-                      </div>
-                    </div>
-
-                    <div class="row collapse">
-                      <h5 class="title">Project Details</h5>
-                      <hr class="subtle-hr">
-                      <div class="large-12 column">
-                        <p class="form-space">When enquiring about hiring me, please specify a budget and ideal start date. This helps me determine the best solution for your circumstances.</p>
-                      </div>
-                    </div>
-
-                    <div class="row collapse">
-                      <div class="large-6 columns">
-                        <label class="inline">Budget
-                          <small>required</small>
-                        </label>
-                        <input type="text" id="yourBudget" placeholder="eg. $1500" required>
-                        <small class="error">Your budget is required</small>
-                      </div>
-
-                      <div class="large-6 columns">
-                        <label class="inline">Start date</label>
-                        <select id="startDate">
-                          <option>Please select</option>
-                          <option>within 1 month</option>
-                          <option>1 - 2 months</option>
-                          <option>2 - 3 months</option>
-                          <option>3+ months</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="row collapse">
-                      <h5 class="title">Message/Project Description</h5>
-                      <hr class="subtle-hr">
-                      <div class="large-12 column">
-                        <p class="form-space">When enquiring about hiring me, please describe your project, what you'd like me to do, and link to any appropriate materials (such as PSDs available via Dropbox).</p>
-                      </div>
-
-                      <label>
-                        <small>required</small>
-                      </label>
-                      <textarea id="yourMessage" rows="4" required></textarea>
-                      <small class="error">Your message/project description is required</small>
-                      <button type="submit" class="radius button">Submit</button>
                   </form>
                   </div>
               </section>
@@ -214,42 +216,44 @@
 
     <!-- Form Validation -->
     <script>
-      $('#myForm')
-        .on('valid.fndtn.abide', function() {
-          console.log('valid!');
+      $('#myForm').submit(function(e) {
+        //prevent default form submitting.
+        e.preventDefault()
+
+        $(this).on('valid', function() {
+          var yourName = $("input#yourName").val();
+          var yourEmail = $("input#yourEmail").val();
+          var yourNumber = $("input#yourNumber").val();
+          var yourWebsite = $("input#yourWebsite").val();
+          var yourBudget = $("input#yourBudget").val();
+          var startDate = $("select#startDate").val();
+          var yourMessage = $("textarea#yourMessage").val();
+
+          //Data for response
+          var dataString = 'yourName=' + yourName +
+            '&yourEmail=' + yourEmail +
+            '&yourNumber=' + yourNumber +
+            '&yourWebsite=' + yourWebsite +
+            '&yourBudget=' + yourBudget +
+            '&startDate=' + startDate +
+            '&yourMessage=' + yourMessage;
+
+          //Begin Ajax call
+          $.ajax({
+            type: "POST",
+            url: "php/mail.php",
+            data: dataString,
+            success: function(data) {
+              $('.contactform').html("<div id='thanks'></div>");
+              $('#thanks').html("<h2>Thanks!</h2>")
+                .append("<p>Dear " + name + ", I will get back to you as soon as I can ;)</p>")
+                .hide()
+                .fadeIn(1500);
+            },
+          }); //ajax call
+          return false;
         });
-
-      var yourName = $("input#yourName").val();
-      var yourEmail = $("input#yourEmail").val();
-      var yourNumber = $("input#yourNumber").val();
-      var yourWebsite = $("input#yourWebsite").val();
-      var yourBudget = $("input#yourBudget").val();
-      var startDate = $("select#startDate").val();
-      var yourMessage = $("textarea#yourMessage").val();
-
-      //Data for response
-      var dataString = 'yourName=' + yourName +
-        '&yourEmail=' + yourEmail +
-        '&yourNumber=' + yourNumber +
-        '&yourWebsite=' + yourWebsite +
-        '&yourBudget=' + yourBudget +
-        'startDate=' + startDate +
-        '&yourMessage=' + yourMessage;
-
-      //Begin Ajax call
-      $.ajax({
-        type: "POST",
-        url: "php/mail.php"
-        data: dataString,
-        success: function() {
-          $('.contactform').html("<div id='thanks'></div>");
-          $('#thanks').html("<h2>Thanks!</h2>")
-            .append("<p>Dear " + yourName + "! I will contact you soon.</p>")
-            .hide()
-            .fadeIn(1500);
-        },
-      }); //ajax call
-      return false;
+      });
     </script>
 
     <!-- Wow JS -->
