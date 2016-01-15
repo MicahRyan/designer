@@ -69,7 +69,7 @@
                 <h5 class="title">About You</h5>
                 <hr class="subtle-hr">
                 <div class="content" data-slug="panel1">
-                  <form id="myForm" data-abide>
+                  <form id="myForm" data-abide="ajax" action="php/mail.php" method="post">
                     <div class="contactform">
                       <div class="row collapse">
                         <div class="large-2 columns">
@@ -217,10 +217,10 @@
     <!-- Form Validation -->
     <script>
       $('#myForm').submit(function(e) {
-        //prevent default form submitting.
-        e.preventDefault()
+        //prevent default form submitting so it can run the ajax code first
+        e.preventDefault();
 
-        $(this).on('valid', function() {
+        $(this).on('valid', function() { //if the form is valid then grab the values of these IDs (name, email, message)
           var yourName = $("input#yourName").val();
           var yourEmail = $("input#yourEmail").val();
           var yourNumber = $("input#yourNumber").val();
@@ -229,7 +229,7 @@
           var startDate = $("select#startDate").val();
           var yourMessage = $("textarea#yourMessage").val();
 
-          //Data for response
+          //Data for reponse (store the values here)
           var dataString = 'yourName=' + yourName +
             '&yourEmail=' + yourEmail +
             '&yourNumber=' + yourNumber +
@@ -241,17 +241,20 @@
           //Begin Ajax call
           $.ajax({
             type: "POST",
-            url: "php/mail.php",
-            data: dataString,
-            success: function(data) {
+            url: "php/mail.php", //runs the php code
+            data: dataString, //stores the data to be passed
+            success: function(data) { // if success then generate the div and append the the following
               $('.contactform').html("<div id='thanks'></div>");
               $('#thanks').html("<h2>Thanks!</h2>")
                 .append("<p>Dear " + name + ", I will get back to you as soon as I can ;)</p>")
                 .hide()
                 .fadeIn(1500);
             },
-          }); //ajax call
-          return false;
+            error: function(jqXHR, status, error) { //this is to check if there is any error
+              alert("status: " + status + " message: " + error);
+            }
+          }); //End Ajax call
+          //return false;
         });
       });
     </script>

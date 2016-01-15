@@ -1,4 +1,6 @@
 <?php
+
+if(isset($_POST["yourName"])){
 $yourName = $_POST["yourName"];
 $yourEmail = $_POST["yourEmail"];
 $yourNumber = $_POST["yourNumber"];
@@ -16,8 +18,7 @@ Website: $yourWebsite
 Budget: $yourBudget
 Start Date: $startDate
 Message:
-$yourMessage
-";
+$yourMessage";
 
 $to = "contact@micahryan.com";
 $subject = "Web Design Contact Form";
@@ -25,4 +26,7 @@ $message = $msg;
 $headers = "Web Design Contact Form";
 mail($to,$subject,$message,$headers);
 
+}else{
+
+}
 ?>
