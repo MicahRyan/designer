@@ -69,7 +69,11 @@
                 <h5 class="title">About You</h5>
                 <hr class="subtle-hr">
                 <div class="content" data-slug="panel1">
+<<<<<<< Updated upstream
                   <form id="myForm" data-abide="ajax" action="php/mail.php" method="post">
+=======
+                  <form id="myForm" data-abide="ajax">
+>>>>>>> Stashed changes
                     <div class="contactform">
                       <div class="row collapse">
                         <div class="large-2 columns">
@@ -101,7 +105,7 @@
                       <div class="row collapse">
                         <div class="large-6 columns">
                           <label class="inline">Telephone number or Skype username</label>
-                          <input type="text" id="yourNumber" placeholder="eg. (123) 456-7890 ">
+                          <input type="number" id="yourNumber" placeholder="eg. (123) 456-7890 ">
                         </div>
 
                         <div class="large-6 columns">
@@ -123,7 +127,7 @@
                           <label class="inline">Budget
                             <small>required</small>
                           </label>
-                          <input type="text" id="yourBudget" placeholder="eg. $1500" required>
+                          <input type="number" id="yourBudget" placeholder="eg. $1500" required>
                           <small class="error">Your budget is required</small>
                         </div>
 
@@ -216,9 +220,14 @@
 
     <!-- Form Validation -->
     <script>
+<<<<<<< Updated upstream
       $('#myForm').submit(function(e) {
         //prevent default form submitting so it can run the ajax code first
         e.preventDefault();
+=======
+      $('#myform').on('valid.fndtn.abide', function() {
+        // Handle the submission of the form
+>>>>>>> Stashed changes
 
         $(this).on('valid', function() { //if the form is valid then grab the values of these IDs (name, email, message)
           var yourName = $("input#yourName").val();
