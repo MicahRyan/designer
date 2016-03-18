@@ -162,6 +162,7 @@ if it's not present, don't show loader */
   background: #F8F8F8;
   border-bottom: #F2F2F2 solid 2px;
   height: 130px;
+  box-shadow: 1px 1px 5px #BDBDBD;
 }
 .row .large-12 img {
   margin-top: 3.5rem;
