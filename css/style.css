@@ -56,12 +56,52 @@ if it's not present, don't show loader */
 }
 .hero-text {
   color: white;
-  margin: 7em 5rem 0;
+  margin: 7em auto 0em auto;
   text-align: center;
 }
+.hero-text-2 {
+  color: white;
+  margin: 0em auto;
+  text-align: center
+}
+
 .hero-text a {
   margin: 1em 5rem 0;
 }
+/*CSS TYPING*/
+.css-typing
+{
+    width: 100%;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 6s steps(60, end);
+    animation: type 6s steps(60, end);
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
+}
+
+.css-typing:nth-child(2){
+  animation: type2 12s steps(60, end);
+}
+
+.blink{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
 .move-left .exit-off-canvas {
   box-shadow: none;
 }
@@ -214,6 +254,7 @@ ul li {
 }
 .service .service-icon-box > img.service-icon {
   width: 40px;
+  box-shadow: none;
 }
 .service:hover {
   border-color: #00a8ff;
@@ -233,7 +274,8 @@ ul li {
 .hero-action {
   margin: 0 auto;
   padding: 15px 0;
-  width: 271px;
+  width: 100%;
+  max-width: 230px;
 }
 .hero-action h3 {
   color: white;
