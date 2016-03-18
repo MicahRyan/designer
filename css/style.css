@@ -30,15 +30,17 @@ if it's not present, don't show loader */
   z-index: 200;
 }
 .hero {
-  background: url("../img/sunglasses-apple-iphone-desk-opt.jpg") no-repeat center center fixed;
+  /*background: url("../img/sunglasses-apple-iphone-desk-opt.jpg") no-repeat center center fixed;*/
   background-size: cover;
   height: 100vh;
+  background: url(../img/background.png) repeat;
 }
 .logo {
   width: 15rem;
   padding: 2rem 0 0 2rem;
   position: relative;
   z-index: 200;
+  box-shadow: none;
 }
 .hero-overlay {
   position: absolute;
@@ -50,7 +52,7 @@ if it's not present, don't show loader */
   z-index: 100;
 }
 .hero .hero-overlay {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .hero-text {
   color: white;
@@ -179,6 +181,7 @@ ul li {
 }
 .service {
   width: 100%;
+  background: #FDFDFD;
   text-align: center;
   border: 1px solid #ddd;
   -webkit-transition: all 0.3s ease;
@@ -464,6 +467,17 @@ ul li {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+/*Background*/
+
+.page-background {
+  background: url(../img/background.png) repeat;
+}
+
+/*Image Box Shadow*/
+img {
+  box-shadow: 2px 2px 10px #4C4C4C;
 }
 
 /*------------------------------------
