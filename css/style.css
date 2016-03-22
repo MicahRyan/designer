@@ -614,7 +614,7 @@ p i {
   animation-duration: 1s;
   animation-delay: 1s;
 }
-#body {
+/*#body {
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 1s;
   -moz-animation-duration: 1s;
@@ -626,7 +626,7 @@ p i {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   animation-delay: 1s;
-}
+}*/
 #time-1 {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
