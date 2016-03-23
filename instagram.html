@@ -21,7 +21,7 @@
 
 
   <div class="off-canvas-wrap" data-offcanvas>
-    <div id="main" class="inner-wrap">
+    <div class="inner-wrap">
       <nav class="header"></nav>
       <a id="top" class="right-off-canvas-toggle fixed" href="#">
         <div class="menu">
@@ -113,29 +113,7 @@
   <script src="js/smoothState-init.js"></script>
 
   <!-- Scroll to Top -->
-  <script>
-    if ($('#top').length) {
-      var scrollTrigger = 100, // px
-        backToTop = function() {
-          var scrollTop = $(window).scrollTop();
-          if (scrollTop > scrollTrigger) {
-            $('#top').addClass('show');
-          } else {
-            $('#top').removeClass('show');
-          }
-        };
-      backToTop();
-      $(window).on('scroll', function() {
-        backToTop();
-      });
-      $('#top').on('click', function(e) {
-        e.preventDefault();
-        $('html,body').animate({
-          scrollTop: 0
-        }, 700);
-      });
-    }
-  </script>
+  <script src="js/scroll-to-top.min.js"></script>
 
 </body>
 
