@@ -1,6 +1,7 @@
 body {
   z-index: 1;
 }
+
 /* This only works with JavaScript,
 if it's not present, don't show loader */
 
@@ -29,11 +30,15 @@ if it's not present, don't show loader */
   position: relative;
   z-index: 200;
 }
+
 /*Page Transitions*/
+
+
 /*
  * CSS Page Transitions
  * Don't forget to add vendor prefixes!
  */
+
 .m-scene {
   /** Reverse "exit" animations */
 }
@@ -54,7 +59,6 @@ if it's not present, don't show loader */
 .m-scene.is-exiting .scene_element {
   animation-direction: alternate-reverse;
 }
-
 .hero {
   /*background: url("../img/sunglasses-apple-iphone-desk-opt.jpg") no-repeat center center fixed;*/
   background-size: cover;
@@ -90,44 +94,49 @@ if it's not present, don't show loader */
   margin: 0em auto;
   text-align: center
 }
-
 .hero-text a {
   margin: 1em 5rem 0;
 }
-/*CSS TYPING*/
-.css-typing
-{
-    width: 100%;
-    white-space:nowrap;
-    overflow:hidden;
-    -webkit-animation: type 6s steps(60, end);
-    animation: type 6s steps(60, end);
-    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
-    animation-delay: 1s;
-}
 
-.css-typing:nth-child(2){
+/*CSS TYPING*/
+
+.css-typing {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 6s steps(60, end);
+  animation: type 6s steps(60, end);
+  -webkit-animation-delay: 1s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 1s;
+}
+.css-typing:nth-child(2) {
   animation: type2 12s steps(60, end);
 }
-
-.blink{
+.blink {
   animation: blink 1s infinite;
 }
-
-@keyframes type{
-  from { width: 0; }
+@keyframes type {
+  from {
+    width: 0;
+  }
 }
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; }
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
 }
-
-@keyframes blink{
-  to{opacity: .0;}
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
 }
-
 .move-left .exit-off-canvas {
   box-shadow: none;
 }
@@ -485,7 +494,7 @@ ul li {
   }
 }
 .website-example h6 {
-  color: #50b2d0;
+  color: #999;
   text-transform: uppercase;
   line-height: 1;
   font-size: 0.875rem;
@@ -501,12 +510,14 @@ ul li {
   border-bottom: 1px solid #999;
 }
 .website-example .button {
-  font-weight: bold;
-  color: #2BA6CB;
-  background: transparent;
   padding-left: 0;
   margin-bottom: 0;
-  box-shadow: none;
+  box-shadow: 2px 2px 2px #4c4c4c;
+  color: white;
+  background: #f44336;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  margin-top: 3%;
 }
 .row.wide {
   max-width: rem-calc(1200);
@@ -545,6 +556,7 @@ ul li {
 }
 
 /*Image Box Shadow*/
+
 img {
   box-shadow: 2px 2px 10px #4C4C4C;
 }
@@ -640,6 +652,7 @@ p i {
   animation-duration: 1s;
   animation-delay: 1s;
 }
+
 /*#body {
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 1s;
@@ -653,6 +666,7 @@ p i {
   -moz-animation-delay: 1s;
   animation-delay: 1s;
 }*/
+
 #time-1 {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
